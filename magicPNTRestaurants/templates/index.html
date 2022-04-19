@@ -6,9 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>magicPNTRestaurants</title>
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="{{url_for('static', filename='./images/favicon/apple-touch-icon.png') }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{url_for('static', filename='./images/favicon/favicon-32x32.png') }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{url_for('static', filename='./images/favicon/favicon-16x16.png') }}">
+  <link rel="apple-touch-icon" sizes="180x180"
+    href="{{url_for('static', filename='./images/favicon/apple-touch-icon.png') }}">
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="{{url_for('static', filename='./images/favicon/favicon-32x32.png') }}">
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="{{url_for('static', filename='./images/favicon/favicon-16x16.png') }}">
   <!-- Material -->
   <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
   <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
@@ -28,38 +31,15 @@
 <body>
   <!-- Main -->
   <main class="main-content" id="main-content">
+    <!-- Top Navbar -->
+    <!--<div id='menu'
+      style='position: absolute; left: 5px; top: 5px; background-color: white; z-index: 999; border-radius: 25px;'>
+      <img src="{{url_for('static', filename='./images/pnt.svg') }}" alt="El gatete Ninja" width="50" height="50">
+      <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon" style='padding-top: 0;' title="Share">share</button>
+      <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon" style='padding-top: 0;' title="Share">share</button>
+    </div>-->
     <!-- Map -->
     <div id='map' style='position: absolute;left:0; top:0; width: 100%; height: 100%;'>
-      <div id="left" class="sidebar flex-center left collapsed">
-        <div class="sidebar-content rounded-rect flex-center">
-          Left Sidebar
-          <div class="sidebar-toggle rounded-rect left" onclick="toggleSidebar('left')">
-            <span class="material-icons mdc-list-item__graphic">
-              emoji_events
-            </span>
-          </div>
-        </div>
-      </div>
-      <div id="right" class="sidebar flex-center right collapsed">
-        <div class="sidebar-content rounded-rect flex-center">
-          <div class="mdc-card__actions">
-            <button class="mdc-icon-button mdc-card__action mdc-card__action--icon" aria-pressed="false"
-              aria-label="Add to favorites" title="Add to favorites">
-              <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">favorite</i>
-              <i class="material-icons mdc-icon-button__icon">favorite_border</i>
-            </button>
-            <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon"
-              title="Share">share</button>
-            <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon"
-              title="More options">more_vert</button>
-          </div>
-          <div class="sidebar-toggle rounded-rect right" onclick="toggleSidebar('right')">
-            <span class="material-icons mdc-list-item__graphic">
-              restaurant
-            </span>
-          </div>
-        </div>
-      </div>
     </div>
   </main>
 
